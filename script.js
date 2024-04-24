@@ -3,7 +3,7 @@ document.getElementById("searchFetchAsync").addEventListener("click", searchWeat
 async function searchWeather() {
     const city = document.getElementById("Input").value;
     const apiKey = 'be79958e66954c3194971545242404'; 
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`;
 
     try {
         const response = await fetch(url);
